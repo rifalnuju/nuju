@@ -87,13 +87,6 @@ def loginSC():
 	if username =="rifal" and password =="nuju":
 		print"\033[1;96m[✓] \033[1;92mLogin success"
 					
-	print logo
-	print "\x1b[1;97m1.\x1b[1;93m Hack facebook MBF"
-	print "\x1b[1;97m2.\x1b[1;93m Lihat daftar grup               "
-	print "\x1b[1;97m3.\x1b[1;93m Informasi akun               "
-	print "\x1b[1;97m4.\x1b[1;93m Yahoo clone               "
-	print "\n\x1b[1;91m0.\x1b[1;91m Logout            "
-	pilih()
 
 
 def pilih():
