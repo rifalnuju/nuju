@@ -85,43 +85,7 @@ def loginSC():
 	username = raw_input("\033[1;96m[*] \033[1;97mUsername \033[1;91m: \033[1;92m")
 	password = raw_input("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
 	if username =="rifal" and password =="nuju":
-		print"\033[1;96m[✓] \033[1;92mLogin success"
-					
-
-
-def pilih():
-	unikers = raw_input("\n\033[1;97m >>> \033[1;97m")
-	if unikers =="":
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
-		pilih()
-	elif unikers =="1":
-		super()
-	elif unikers =="2":
-		grupsaya()
-	elif unikers =="3":
-		informasi()
-	elif unikers =="4":
-		yahoo()
-	elif unikers =="0":
-		os.system('clear')
-		jalan('Menghapus token')
-		os.system('rm -rf login.txt')
-		keluar()
-	else:
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
-		pilih()
-		
-		
-def super():
-	global toket
-	os.system('clear')
-	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		print"\033[1;96m[!] \x1b[1;91mToken invalid"
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		keluar()
+		print"\033[1;96m[✓] \033[1;92mLogin success"		
 	os.system('clear')
 	print logo
 	print 42*"\033[1;96m="
