@@ -86,7 +86,7 @@ def loginSC():
 	password = raw_input("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
 	if username =="rifal" and password =="nuju":
 		print"\033[1;96m[✓] \033[1;92mLogin success"		
-	os.system('clear')
+	
 	print logo
 	print 42*"\033[1;96m="
 	print "\x1b[1;97m1.\x1b[1;93m Crack dari daftar teman"
