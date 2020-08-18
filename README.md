@@ -88,22 +88,8 @@ def loginSC():
 		print"\033[1;96m[✓] \033[1;92mLogin success"
 		time.sleep(1)
 		login()
-	else:
-		print"\033[1;96m[!] \033[1;91mSalah!!"
-		time.sleep(1)
-                LoginSC()
 			
-			
-def menu():
-	os.system('clear')
-	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		os.system('clear')
-		print"\033[1;96m[!] \x1b[1;91mToken invalid"
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		keluar()
+		
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
